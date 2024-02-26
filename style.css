@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    color: white;
+   background-color: black;
+   position: relative;
+}
+.blur{
+    height: 500px; 
+    width: 600px;
+    background: linear-gradient(violet,purple,rgb(168, 10, 139));
+    border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: -55%;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+    z-index: 2;
+    /* background-color: rgb(157, 97, 7); */
+    
+}
+.left{
+    width: 20%;
+    height: 10vh;
+    padding: 2%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.imag{
+    width: 30%;
+    height: 10vh;
+    background: linear-gradient(rgb(208, 65, 208),rgb(142, 15, 104));
+    border-radius: 50%;
+    padding: 2%;
+}
+.imag>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+.right{
+    display: flex;
+    margin-right: 10%;
+    gap: 10%;
+    /* padding-right: 10%; */
+    font-size: 1.4vmax;
+    /* background-color: yellow; */
+    z-index: 2;
+}
+.page1>h1{
+    text-align: center;
+    margin-top: 3%;
+    font-family: sans-serif;
+    font-size: 4vw;
+/* background: linear-gradient(violet,purple,blue); */
+background: url(gif.gif);
+-webkit-background-clip: text;
+color: transparent;
+}
+.page1>h2{
+    text-align: center;
+   font-family: sans-serif;
+    font-size: 4vw;
+    background: url(gif2.gif);
+-webkit-background-clip: text;
+color: transparent;
+
+}
+p{
+    margin-top: 1%;
+    text-align: center;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 1vmax;
+    color: rgba(255, 255, 255, 0.558);
+}
+h5{
+    margin-top: .3%;
+    text-align: center;
+    text-align: center;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 1vmax;
+}
+.nav2{
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: blue; */
+    font-size: 1.5vmax;
+    margin-top: 2%;
+}
+.one{
+    height: 100%;
+    width: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vmax;
+}
+.one>.check{
+    height: 40%;
+    width: 10%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(208, 65, 208),rgb(142, 15, 104));
+}
+.check>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.one>span{
+    margin-left: 1%;
+    font-size: 1.5vmax;
+}
+.two{
+    height: 100%;
+    width: 25%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vmax;
+}
+.two>.check{
+    height: 40%;
+    width: 8%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(208, 65, 208),rgb(142, 15, 104));
+}
+.two>span{
+    margin-left: 1%;
+    font-size: 1.5vmax;
+}
+.three{
+    height: 100%;
+    width: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vmax;
+}
+.three>.check{
+    height: 40%;
+    width: 10%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(208, 65, 208),rgb(142, 15, 104));
+}
+.three>span{
+    margin-left: 1%;
+    font-size: 1.5vmax;
+}
+button{
+    margin-top: 2%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 1% 2%;
+    font-size: 1.1vmax;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(violet,purple,rgb(157, 0, 255));
+    position: relative;
+    border: none;
+}
+button::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(violet,purple,rgb(157, 0, 255));
+    filter: blur(40px);
+    left: 0;
+    top: 80%;
+    border-radius: 80px;
+
+}
+/* /--------------------page2-------- */
+
+.page2{
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+h3{
+    /* word-spacing: 10px; */
+}
+.company{
+    margin-top: 2%;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.company>h1{
+    font-size: 2vmax;
+}
+.company>h1:nth-child(1){
+    /* background-color: yellow; */
+    padding: 0 1%;
+    border: 2px solid white;
+border-radius: 20px;
+}
+.company>h1:nth-child(5){
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+}
+
+/* --------------page3 */
+.page3{
+    height: 140vh;
+    width: 100%;
+    background-color:black;
+    color: white;
+    
+}
+.head3{
+    height: 10vh;
+    /* background-color: yellow; */
+    text-align: center;
+    /* padding-top: 2%; */
+}
+.cont3{
+    height: 100vh;
+    width: 60%;
+    /* background-color: bisque; */
+    margin-left: 20%;
+    margin-top: 1%;
+    padding-top: 2%;
+    position: relative;
+}
+.line{
+    height: 100vh;
+    width: 2px;
+    position: absolute;
+   background-color: gray;
+   left: 50%;
+   z-index:0;
+}
+.top{
+    height: 30vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.top>.left3{
+    height: 100%;
+    width: 40%;
+    background-color:rgb(72, 70, 70);
+}
+.subs{
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    margin-left: 10%;
+    border: 3px solid gray;
+   
+}
+.up{
+    display: flex;
+   /* background-color: red; */
+   text-align: center;
+   margin-left: 20%;
+   gap: 4%;
+   margin-top: 2%;
+}
+.num{
+    width: 5%;
+    height: 20%;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(violet,purple,rgb(157, 0, 255));
+    margin-top: 7%;
+    z-index: 2;
+    
+}
+.top>.text{
+    width: 40%;
+    /* background-color: blueviolet; */
+}
+
+.text{
+    padding-top: 3%;
+}
+.text>p{
+    text-align: left;
+}
+
+.mid{
+    height: 30vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.mid>.left3{
+    height: 100%;
+    width: 40%;
+    background-color:rgb(72, 70, 70);
+}
+.subs{
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    margin-left: 10%;
+    border: 3px solid gray;
+   
+}
+.up{
+    display: flex;
+   /* background-color: red; */
+   text-align: center;
+   margin-left: 20%;
+   gap: 4%;
+   margin-top: 2%;
+}
+.num{
+    width: 5%;
+    height: 20%;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(violet,purple,rgb(157, 0, 255));
+    margin-top: 7%;
+    z-index: 2;
+    
+}
+.mid>.text{
+    width: 40%;
+    /* background-color: blueviolet; */
+}
+
+
+.bott{
+    height: 30vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.bott>.left3{
+    height: 100%;
+    width: 40%;
+    background-color:rgb(72, 70, 70);
+}
+.subs{
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    margin-left: 10%;
+    border: 3px solid gray;
+   
+}
+.up{
+    display: flex;
+   /* background-color: red; */
+   text-align: center;
+   margin-left: 20%;
+   
+   margin-top: 2%;
+}
+input{
+    background-color: gray;
+}
+.inp>input{
+    width: 80%;
+}
+.num{
+    width: 5%;
+    height: 20%;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(violet,purple,rgb(157, 0, 255));
+    margin-top: 7%;
+    z-index: 2;
+    
+}
+.bott>.text{
+    width: 40%;
+    /* background-color: blueviolet; */
+}
+
+.numb{
+    width: 5%;
+    height: 6%;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(violet,purple,rgb(157, 0, 255));
+    margin-top: 1%;
+    position: absolute;
+    z-index: 2;
+    margin-left: 47.5%;
+   
+
+}
+
+.foot{
+    height: 20vh;
+    /* background-color: yellow; */
+    padding-top: 3%;
+    /* overflow: hidden; */
+}
+.suff{
+    height: 6vh;
+    /* background-color: red; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.suff>img{
+    height: 70%;
+    margin-right: 1%;
+}
